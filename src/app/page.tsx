@@ -172,6 +172,74 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===== P: Problem（問題提起 + 煽り）===== */}
+      <section id="problems">
+        <div className="container" style={{ textAlign: "center" }}>
+          <span className="section-label">見て見ぬふり、していませんか？</span>
+          <h2 className="section-title">
+            その手作業、<span className="accent-text">毎月いくら</span>損してますか？
+          </h2>
+          <p className="section-desc" style={{ maxWidth: "700px" }}>
+            毎日同じ作業に追われて、本来やるべき仕事ができない。
+            そんな状態をあと何年続けますか？ — 2024年問題で人手不足が加速する今、
+            紙の業務を続ける企業は確実に取り残されます。
+          </p>
+          <div className="problems-grid">
+            {[
+              { icon: "📋", title: "紙の日報・手作業が多すぎる", desc: "毎日のExcel転記、紙の集計作業に何時間もかかっている。ミスも多い。その1時間、年間で240時間。人件費に換算すると48万円の損失です。" },
+              { icon: "🤷", title: "AIに興味はあるが何から始めればいいか分からない", desc: "「AIで効率化したい」と思っていても、情報が多すぎて何が正解か分からない。検討しているうちに、競合はどんどん先に行く。" },
+              { icon: "💸", title: "大手SIerの見積もりは数百万円", desc: "DXしたくても、大手の見積もりは500万〜1,000万。中小企業には到底手が出せない。でも安い外注は品質が不安。" },
+              { icon: "😫", title: "過去にIT導入して失敗した", desc: "システムを入れたが現場のスタッフが使いこなせず、結局元の手作業に戻った。「あの投資は何だったのか」— 同じ失敗は繰り返せない。" },
+            ].map((p, i) => (
+              <div key={i} className="card problem-card">
+                <div className="problem-icon">{p.icon}</div>
+                <div>
+                  <h3>{p.title}</h3>
+                  <p>{p.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== A: Affinity（親近感・共感）===== */}
+      <section className="affinity-section">
+        <div className="container">
+          <div className="affinity-box">
+            <span className="section-label">なぜ「現場が分かる」と言い切れるのか</span>
+            <h2 className="section-title" style={{ textAlign: "center" }}>
+              私も、<span className="accent-text">まったく同じ苦しみ</span>を経験しました
+            </h2>
+            <div className="affinity-story">
+              <div className="affinity-item">
+                <div className="affinity-quote">"</div>
+                <p>
+                  月125時間の残業をしながら、毎日手書きの日報を集計していました。
+                  深夜にExcelと格闘しながら「この作業、意味あるのか」と何度も思いました。
+                </p>
+              </div>
+              <div className="affinity-item">
+                <div className="affinity-quote">"</div>
+                <p>
+                  ITに詳しくないドライバーに新しいシステムを使ってもらうために、
+                  何度もツールを変え、画面を作り直しました。
+                  <strong>「現場で使われなければ、どんなシステムも意味がない」</strong>
+                  — それを身をもって学びました。
+                </p>
+              </div>
+              <div className="affinity-item">
+                <div className="affinity-quote">"</div>
+                <p>
+                  その泥臭い経験があるから、あなたの現場に本当に合うシステムを作れます。
+                  机の上で設計書を書くだけのコンサルとは、スタート地点が違います。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ===== Profile ===== */}
       <section>
         <div className="container">
@@ -198,46 +266,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== Problems ===== */}
-      <section id="problems">
-        <div className="container" style={{ textAlign: "center" }}>
-          <span className="section-label">こんなお悩みありませんか？</span>
-          <h2 className="section-title">多くの中小企業が抱える課題</h2>
-          <p className="section-desc">
-            これらは私自身が現場で経験してきた課題です。だから解決策が分かります。
-          </p>
-          <div className="problems-grid">
-            {[
-              { icon: "📋", title: "紙の日報・手作業が多すぎる", desc: "毎日のExcel転記、紙の集計作業に何時間もかかっている。ミスも多い。" },
-              { icon: "🤷", title: "AIに興味はあるが何から始めればいいか分からない", desc: "「AIで効率化したい」と思っているが、具体的に何をどうすればいいのか見当がつかない。" },
-              { icon: "💸", title: "高額なシステムは導入できない", desc: "大手SIerの見積もりは数百万。中小企業には到底手が出せない。" },
-              { icon: "😫", title: "過去にIT導入して失敗した経験がある", desc: "システムを入れたが現場のスタッフが使いこなせず、結局元の手作業に戻った。" },
-            ].map((p, i) => (
-              <div key={i} className="card problem-card">
-                <div className="problem-icon">{p.icon}</div>
-                <div>
-                  <h3>{p.title}</h3>
-                  <p>{p.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ===== Strengths ===== */}
+      {/* ===== SO: Solution（解決策の提示）===== */}
       <section>
         <div className="container" style={{ textAlign: "center" }}>
-          <span className="section-label">なぜアキラに任せるのか</span>
-          <h2 className="section-title">3つの強み</h2>
+          <span className="section-label">だから、こう解決します</span>
+          <h2 className="section-title">あなたの業務を変える、<span className="accent-text">3つのアプローチ</span></h2>
           <p className="section-desc">
-            技術だけのコンサルとは一線を画す、現場発の強みです。
+            技術を売り込むのではなく、現場の課題から逆算して仕組みを作ります。
           </p>
           <div className="strengths-grid">
             {[
-              { n: "01", title: "運輸現場10年の叩き上げ", desc: "配車・点呼・倉庫管理を全て経験。現場のオペレーション・作業者の心理・業務の非効率ポイントを体で知っています。" },
-              { n: "02", title: "自分のビジネスで実証済み", desc: "6事業を同時運営する中で、自分自身がAI・自動化を日常的に使い、ROIを検証済み。「理論」ではなく「実践」でお話します。" },
-              { n: "03", title: "結果にコミット。定着までサポート", desc: "ツールを入れて終わりではありません。現場スタッフが使いこなすまでレクチャー・サポートを続けます。" },
+              { n: "01", title: "まず現場を見る。ヒアリングから始める", desc: "いきなりツールの話はしません。あなたの業務フローを一緒に洗い出し、「どこが本当のボトルネックか」を特定します。現場を10年知っているから、見えるポイントが違います。" },
+              { n: "02", title: "自分で使って効果を実証済みのツールだけ提案", desc: "6事業を同時運営する中で、自分自身がAI・自動化を毎日使い、ROIを検証済み。「理論」ではなく「この組み合わせで月○時間削減できた」と実績ベースでお話します。" },
+              { n: "03", title: "導入して終わりじゃない。定着するまで伴走", desc: "ツールを入れて納品書を渡して終わり — そんなことはしません。現場スタッフが「これ便利だね」と言うまで、レクチャーとサポートを続けます。" },
             ].map((s, i) => (
               <div key={i} className="card strength-card">
                 <div className="strength-number">{s.n}</div>
@@ -249,7 +290,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== Cases ===== */}
+      {/* ===== Cases（実績 = Solution の証明）===== */}
       <section id="cases">
         <div className="container" style={{ textAlign: "center" }}>
           <span className="section-label">実績紹介</span>
@@ -283,6 +324,49 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== N: Narrow Down（絞り込み + 限定性）===== */}
+      <section className="narrow-section">
+        <div className="container" style={{ textAlign: "center" }}>
+          <span className="section-label">このサービスが合う方</span>
+          <h2 className="section-title">
+            すべての企業に勧めているわけでは<span className="accent-text">ありません</span>
+          </h2>
+
+          <div className="narrow-grid">
+            <div className="card narrow-card narrow-yes">
+              <h3>✅ こんな方にぴったりです</h3>
+              <ul>
+                <li>従業員10〜100名の中小企業の経営者・管理職</li>
+                <li>「AIに興味はあるが、何から始めるか分からない」方</li>
+                <li>大手SIerの見積もりに「高すぎる」と感じた方</li>
+                <li>過去にIT導入で失敗し、今度こそ成功させたい方</li>
+                <li>現場スタッフがITに弱く、使いやすさを重視したい方</li>
+              </ul>
+            </div>
+            <div className="card narrow-card narrow-no">
+              <h3>❌ 逆に、こんな方には向いていません</h3>
+              <ul>
+                <li>既に社内にIT部門があり、自社開発が可能な企業</li>
+                <li>「とりあえず流行ってるから」という動機だけの方</li>
+                <li>最安値だけを追求し、品質や定着率は二の次の方</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="narrow-urgency">
+            <div className="urgency-box">
+              <p className="urgency-icon">⏰</p>
+              <p className="urgency-text">
+                一人で丁寧に対応するため、<strong>同時に3社まで</strong>しかお受けできません。
+              </p>
+              <p className="urgency-slots">
+                現在の空き枠: <span className="accent-text" style={{ fontSize: "1.5rem", fontWeight: 900 }}>残り2社</span>
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -339,7 +423,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== CTA ===== */}
+      {/* ===== A: Action（行動喚起 — 強化版）===== */}
       <section className="cta-section">
         <div className="container">
           <div className="cta-box">
@@ -349,14 +433,20 @@ export default function Home() {
               <br />
               <span className="accent-text">その質問だけでもOKです</span>
             </h2>
-            <p>
-              初回相談は完全無料。売り込みは一切しません。
-              <br />
-              LINEで気軽にお問い合わせください。
-            </p>
+
+            <div className="cta-benefits">
+              <div className="cta-benefit-item">✅ 30分の無料診断で「自動化できるポイント」を3つお伝えします</div>
+              <div className="cta-benefit-item">✅ 売り込みは一切しません。合わなければそれでOK</div>
+              <div className="cta-benefit-item">✅ 相談後、改善提案レポートを無料でお渡しします</div>
+            </div>
+
             <a href={LINE_URL} className="btn-primary" style={{ fontSize: "1.1rem", padding: "18px 48px" }}>
               🟢 LINEで無料相談する
             </a>
+
+            <p className="cta-urgency">
+              ⏰ 今月の無料相談枠: <strong className="accent-text">残り3名</strong>
+            </p>
           </div>
         </div>
       </section>
