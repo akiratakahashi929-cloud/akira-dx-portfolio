@@ -743,6 +743,138 @@ section {
   font-weight: 700;
 }
 
+/* ===== Tool Catalog ===== */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 32px 24px;
+}
+
+.tool-card.featured {
+  border-color: var(--accent);
+  box-shadow: 0 0 30px rgba(129, 216, 208, 0.1);
+}
+
+.tool-card-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.tool-card-price {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.tool-card-price small {
+  font-size: 0.6em;
+  color: var(--text-secondary);
+}
+
+.tool-card-desc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.tool-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tool-card-meta-item {
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+}
+
+.tool-card-savings {
+  background: rgba(129, 216, 208, 0.1) !important;
+  color: var(--accent) !important;
+  font-weight: 600;
+}
+
+.tool-card .plan-features {
+  flex: 1;
+}
+
+/* ===== Tech Advantage ===== */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.tech-card {
+  text-align: center;
+  padding: 40px 24px;
+}
+
+.tech-icon {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.tech-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.tech-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* ===== Dual CTA ===== */
+.cta-dual {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.cta-dual .btn-primary,
+.cta-dual .btn-secondary {
+  min-width: 220px;
+}
+
+.btn-final-cta-form {
+  display: inline-block;
+  padding: 18px 36px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  min-height: 60px;
+}
+
+/* ===== Cost Savings Metric Highlight ===== */
+.case-metric-value {
+  color: var(--accent);
+}
+
 /* ===== Icon Replacements (no emoji) ===== */
 .icon-check {
   display: inline-flex;
@@ -1203,6 +1335,28 @@ section {
   /* Show floating CTA on mobile */
   .floating-cta {
     display: block;
+  }
+
+  /* New section responsive */
+  .tools-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 40px auto 0;
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-dual {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-dual .btn-primary,
+  .cta-dual .btn-secondary {
+    width: 100%;
+    max-width: 360px;
   }
 
   /* Extra bottom padding for floating CTA */
