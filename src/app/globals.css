@@ -743,6 +743,63 @@ section {
   font-weight: 700;
 }
 
+/* ===== Icon Replacements (no emoji) ===== */
+.icon-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: var(--accent);
+  color: #0a0a0a;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  margin-right: 4px;
+}
+
+.icon-cross {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: var(--danger);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  margin-right: 4px;
+}
+
+.urgency-icon-styled {
+  display: inline-block;
+  padding: 6px 20px;
+  background: var(--gradient-hero);
+  color: #0a0a0a;
+  font-size: 0.8rem;
+  font-weight: 800;
+  border-radius: 50px;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.benefit-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: var(--accent);
+  color: #0a0a0a;
+  border-radius: 50%;
+  font-size: 0.65rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
 .narrow-urgency {
   margin-top: 40px;
 }

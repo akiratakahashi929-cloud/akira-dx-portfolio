@@ -351,7 +351,7 @@ export default function Home() {
 
           <div className="narrow-grid">
             <div className="card narrow-card narrow-yes">
-              <h3>✅ こんな方にぴったりです</h3>
+              <h3><span className="icon-check">✓</span> こんな方にぴったりです</h3>
               <ul>
                 <li>従業員10〜100名の中小企業の経営者・管理職</li>
                 <li>「AIに興味はあるが、何から始めるか分からない」方</li>
@@ -361,7 +361,7 @@ export default function Home() {
               </ul>
             </div>
             <div className="card narrow-card narrow-no">
-              <h3>❌ こんな方には向いていません</h3>
+              <h3><span className="icon-cross">×</span> こんな方には向いていません</h3>
               <ul>
                 <li>既に社内にIT部門があり、自社開発が可能な企業</li>
                 <li>「とりあえず流行ってるから」という動機だけの方</li>
@@ -372,7 +372,7 @@ export default function Home() {
 
           <div className="narrow-urgency">
             <div className="urgency-box">
-              <p className="urgency-icon">⏰</p>
+              <p className="urgency-icon-styled">限定</p>
               <p className="urgency-text">
                 一人で丁寧に対応するため、<strong>同時に3社まで</strong>しかお受けできません。
               </p>
@@ -449,15 +449,15 @@ export default function Home() {
 
             <div className="cta-benefits">
               <div className="cta-benefit-item">
-                <span className="benefit-check">✅</span>
+                <span className="benefit-check">✓</span>
                 <span>30分の無料診断で「自動化できるポイント」を<strong>3つ</strong>お伝えします</span>
               </div>
               <div className="cta-benefit-item">
-                <span className="benefit-check">✅</span>
+                <span className="benefit-check">✓</span>
                 <span>売り込みは一切しません。合わなければそれでOK</span>
               </div>
               <div className="cta-benefit-item">
-                <span className="benefit-check">✅</span>
+                <span className="benefit-check">✓</span>
                 <span>相談後、<strong>改善提案レポートを無料</strong>でお渡しします</span>
               </div>
             </div>
