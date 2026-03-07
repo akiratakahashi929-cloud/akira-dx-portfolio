@@ -53,8 +53,8 @@ const CASES = [
   },
   {
     tag: "経営管理",
-    title: "AIオーケストレーションで6事業を自動管理",
-    desc: "統括AIエージェント（CEO）が4つの専門AIを指揮し、KPI追跡・週次レポート・タスク振り分けを全自動化。管理工数を月30時間→5時間に。",
+    title: "AIで6つの事業を\"ほぼ放置\"で回す仕組み",
+    desc: "KPI追跡・週次レポート・タスク振り分けをAIが自動処理。経営者が本当にやるべき仕事にだけ集中できる環境を構築。管理工数を月30時間→5時間に。",
     image: "/images/case-orchestration.png",
     metrics: [
       { value: "-83%", label: "管理工数" },
@@ -117,8 +117,8 @@ export default function Home() {
       {/* ===== Nav ===== */}
       <nav className="nav" role="navigation" aria-label="メインナビゲーション">
         <div className="container nav-inner">
-          <a href="#" className="nav-logo" aria-label="アキラDX トップへ">
-            ⚡ アキラ<span>DX</span>
+          <a href="#" className="nav-logo" aria-label="G-knot トップへ">
+            G-<span>knot</span>
           </a>
           <ul className="nav-links">
             <li><a href="#problems">よくある悩み</a></li>
@@ -135,7 +135,7 @@ export default function Home() {
       {/* ===== Hero (Attention) ===== */}
       <section className="hero">
         <div className="container">
-          <span className="hero-badge animate-fade-in">🚀 運輸現場出身 × AI自動化のプロ</span>
+          <span className="hero-badge animate-fade-in">運輸現場出身 × AI自動化のプロ</span>
           <h1 className="animate-fade-in-delay1">
             業務時間<span className="accent-text">−90%</span>。
             <br />
@@ -155,7 +155,7 @@ export default function Home() {
             </a>
           </div>
           <p className="hero-trust animate-fade-in-delay3">
-            ✅ 30秒で完了 &nbsp;|&nbsp; ✅ 売り込み一切なし &nbsp;|&nbsp; ✅ 完全無料
+            30秒で完了  |  売り込み一切なし  |  完全無料
           </p>
 
           <div className="stats animate-fade-in-delay3">
@@ -245,7 +245,7 @@ export default function Home() {
         <div className="container">
           <div className="profile-section">
             <div className="profile-info">
-              <div className="profile-name">高橋 晟（アキラ）</div>
+              <div className="profile-name">G-knot 代表</div>
               <div className="profile-title">運輸企業取締役 × AI・自動化コンサルタント</div>
               <p className="profile-bio">
                 高卒から大手引越会社に入社。月残業125時間の運輸現場で叩き上げ、取締役に昇格。
@@ -395,7 +395,7 @@ export default function Home() {
           <div className="plans-grid">
             {PLANS.map((p, i) => (
               <div key={i} className={`card plan-card ${p.featured ? "featured" : ""}`}>
-                {p.featured && <span className="plan-badge">🔥 一番人気</span>}
+                {p.featured && <span className="plan-badge">一番人気</span>}
                 <div className="plan-name">{p.name}</div>
                 <div className="plan-price">
                   {p.price}<small>{p.unit}</small>
@@ -467,7 +467,7 @@ export default function Home() {
             </a>
 
             <p className="cta-urgency">
-              🔴 3月の無料診断枠: <strong className="accent-text">残り2名</strong>（先着順）
+              3月の無料診断枠: <strong className="accent-text">残り2名</strong>（先着順）
             </p>
           </div>
         </div>
@@ -476,14 +476,14 @@ export default function Home() {
       {/* ===== Footer ===== */}
       <footer className="footer">
         <div className="container">
-          <p>© 2026 高橋晟（アキラ）— AIエージェント・業務自動化構築代行</p>
+          <p>© 2026 G-knot — AI・業務自動化構築代行</p>
         </div>
       </footer>
 
       {/* ===== Floating Mobile CTA ===== */}
       <div className="floating-cta">
         <a href={LINE_URL} className="btn-primary floating-cta-btn" id="floating-cta">
-          🟢 無料で相談する
+          無料で相談する
         </a>
       </div>
     </>
